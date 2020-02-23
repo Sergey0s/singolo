@@ -105,3 +105,57 @@ header {
     opacity: 0.2;
 }
 
+.slider {
+    margin: auto;
+    width: 100%;
+    background-color: #ff6c64;
+    border-bottom: 6px solid #f55d55;
+}
+
+.slider-content__wrapper {
+    min-height: 594px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-controls__arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 590px;
+}
+
+.slider-controls__arrow img {
+    opacity: 0.1;
+}
+
+.slider-controls__arrow img:hover {
+    opacity: 1;
+}
+
+.arrow-right {
+    transform: rotate(180deg);
+}
+
+.slider-content {
+    display: flex;
+    width: 795px;
+}
+
+.slider__iphone-vertical {
+    margin-top: 53px;
+    background-image: url('assets/images/iPhone-vertical.png');
+    width: 240px;
+    height: 483px;
+}
+
+.slider__iphone-horizontal {
+    margin-top: 174px;
+    margin-left: 73px;
+    background-image: url('assets/images/iPhone-horizontal.png');
+    width: 483px;
+    height: 240px;
+}
+
