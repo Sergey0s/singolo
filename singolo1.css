@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url('assets/fonts/lato-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url('assets/fonts/lato-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url('assets/fonts/lato-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'), url('assets/fonts/lato-900.woff2') format('woff2');
+}
+
+body,
+html {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body,
+html {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    margin: auto;
+    height: 89px;
+    background-color: #272c38;
+    border-bottom: 6px solid #2c3445;
+}
+
+.header__wrapper {
+    display: flex;
+    margin: auto;
+    width: 940px;
+    padding-top: 13px;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #272c38;
+}
+
+.header__logo {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -0.02em;
+    font-size: 12.2px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.header__logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.header__logoAccent {
+    color: #ff6962;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.header-menu {
+    display: flex;
+    padding-top: 29px;
+}
+
+.header-menu__item {
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.header-menu__item:hover {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: red;
+}
+
+.header-menu__separator {
+    width: 29px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    opacity: 0.2;
+}
+
