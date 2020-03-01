@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url('assets/fonts/lato-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url('assets/fonts/lato-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url('assets/fonts/lato-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'), url('assets/fonts/lato-900.woff2') format('woff2');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio {
+    margin: auto;
+    width: 1020px;
+    height: 870px;
+    background-color: #2d303a;
+    position: absolute;
+}
+
+.portfolio__wrapper {
+    margin: 69px 30px;
+}
+
+.portfolio__title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.portfolio__subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin-top: 28px;
+    padding: 0 10px;
+}
+
+.portfolio__works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio__image {
+    margin: 10px;
+}
+
+.portfolio__filters {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+.portfolio__button {
+    width: auto;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #666d89;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: 'Lato';
+    font-weight: 400;
+    text-align: left;
+    margin: 10px 9.2px 10px 0;
+    padding: 0 6.8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    letter-spacing: -0.002rem;
+    transition: all .1s linear;
+}
+
+.portfolio__button.button_artwork {
+    padding: 0 4.3px;
+}
