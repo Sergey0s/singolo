@@ -32,11 +32,13 @@ body {
 }
 
 .portfolio {
-    margin: auto;
+    margin: 0 auto;
     width: 1020px;
     height: 870px;
     background-color: #2d303a;
-    position: absolute;
+    padding: 0;
+    overflow:hidden
+
 }
 
 .portfolio__wrapper {
@@ -103,4 +105,16 @@ body {
 
 .portfolio__button.button_artwork {
     padding: 0 4.3px;
+}
+
+.portfolio__button.button-active {
+    color: white;
+    border: 1px solid white;
+}
+
+.portfolio__button:hover,
+.portfolio__button:active
+{
+    color: white;
+    border: 1px solid white;
 }
