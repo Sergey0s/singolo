@@ -31,3 +31,30 @@ horizontalPhone.addEventListener('click', (event) => {
     document.getElementById('blackScreen2').classList.toggle('slider__blackScreen-horizontal')
 });
 
+const portfolioMenu = document.getElementById('portfolio-menu');
+portfolioMenu.addEventListener('click', (event) => {
+    if (event.target.className !== 'portfolio__filters') {
+        portfolioMenu.querySelectorAll('.portfolio__button').forEach(el => el.classList.remove('portfolio__button-active'));
+        event.target.classList.add('portfolio__button-active')
+        reorderPictures();
+    }
+});
+
+
+const portfolio = document.querySelector(".portfolio__works");
+
+function reorderPictures() {
+    const firstPicture = portfolio.children[0];
+    const firstPictureCopy = firstPicture.cloneNode();
+    firstPicture.remove();
+    portfolio.append(firstPictureCopy);
+}
+
+portfolio.addEventListener('click', (event => {
+    console.log(event.target)
+    if (event.target.className !== 'portfolio__works') {
+        portfolio.querySelectorAll('.portfolio__image').forEach(el => el.classList.remove('portfolio__image-active'));
+        event.target.classList.add('portfolio__image-active')
+    }
+
+}));
