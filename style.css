@@ -149,6 +149,19 @@ header {
 .slider__content {
     display: flex;
     width: 795px;
+    justify-content: center;
+    align-content: center;
+}
+
+.slider2__content {
+    display: flex;
+    width: 795px;
+    justify-content: center;
+    align-content: center;
+}
+
+.slider2_bg {
+    background-color: #648BF0;
 }
 
 .slider__iphone-vertical {
@@ -166,6 +179,12 @@ header {
     height: 240px;
 }
 
+.slider2__phones {
+    margin-top: 50px;
+    background-image: url('assets/images/2-iphones.png');
+    width: 517px;
+    height: 513px;
+}
 
 .content {
     width: 100%;
