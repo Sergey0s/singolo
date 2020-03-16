@@ -151,6 +151,7 @@ header {
     width: 795px;
     justify-content: center;
     align-content: center;
+    position: relative;
 }
 
 .slider2__content {
@@ -162,6 +163,7 @@ header {
 
 .slider2_bg {
     background-color: #648BF0;
+    border-bottom: 6px solid #5872cb;
 }
 
 .slider__iphone-vertical {
@@ -184,6 +186,46 @@ header {
     background-image: url('assets/images/2-iphones.png');
     width: 517px;
     height: 513px;
+}
+
+.slider__blackScreen-vertical {
+    background-color: black;
+    width: 189px;
+    height: 335px;
+    position: absolute;
+    left: 14px;
+    top: 117px
+}
+
+.slider__blackScreen-horizontal {
+    background-color: black;
+    width: 189px;
+    height: 335px;
+    position: absolute;
+    left: 445px;
+    top: 114px;
+    transform: rotate(90deg);
+}
+
+.slider_phone1-Area {
+    border-radius: 20px;
+    width: 212px;
+    height: 455px;
+    position: absolute;
+    left: 0;
+    top: 52px;
+    z-index: 100;
+}
+
+.slider_phone2-Area {
+    border-radius: 20px;
+    width: 212px;
+    height: 455px;
+    position: absolute;
+    left: 433px;
+    top: 52px;
+    transform: rotate(90deg);
+    z-index: 100;
 }
 
 .content {
