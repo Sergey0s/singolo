@@ -9,7 +9,7 @@
     <title>Singolo</title>
 </head>
 <body>
-<header id="home">
+<header>
     <div class="header__wrapper">
         <div class="header__logo">
             <a href="#">
@@ -19,9 +19,7 @@
         </div>
         <div id="header_menu" class="header__menu">
             <div class="header__item">
-                <a class="header__link header__active" href="#home">
-                    HOME
-                </a>
+                <a class="header__link header__active" href="#slider">HOME</a>
             </div>
             <div class="header__separator">·</div>
 
@@ -46,7 +44,6 @@
             <div class="header__item">
                 <a class="header__link" href="#contact">CONTACT</a>
             </div>
-
         </div>
     </div>
 </header>
@@ -241,13 +238,23 @@
             cursus commodo, tortor mauris condimentum nibh.
         </div>
         <div class="contact__content">
-            <form class="contact__form">
-                <input placeholder="Name (Required)" required type="text">
-                <input placeholder="Email (Required)" required type="email">
-                <input placeholder="Subject">
-                <textarea placeholder="Describe your project in detail..."></textarea>
-                <button>Submit form</button>
+            <form id="form" class="contact__form">
+                <input id="name" placeholder="Name (Required)" required type="text">
+                <input id="email" placeholder="Email (Required)" required type="email">
+                <input id="subject" placeholder="Subject">
+                <textarea id="description" placeholder="Describe your project in detail..."></textarea>
+                <button class="form__button">Submit form</button>
             </form>
+
+            <div class="modal-backdrop visually-hidden">
+                <div id="modal-window" class="modal-window">
+                    <p class="modal-result-message">The letter was sent</p>
+                    <p class="modal-message" id="modal-subject"></p>
+                    <p class="modal-message" id="modal-description"></p>
+                    <button id="modal-close-button" class="modal-button">OK</button>
+                </div>
+            </div>
+
             <div class="contact__info">
                 <h4 class="contact__infoTitle">Contact Information</h4>
                 <p class="contact__infoDescription">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
@@ -267,7 +274,6 @@
                     <a class="contact__link" href="mailto:info@singolo.com">info@singolo.com</a>
                 </p>
             </div>
-
         </div>
     </div>
 </section>
