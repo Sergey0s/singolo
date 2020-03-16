@@ -9,7 +9,7 @@
     <title>Singolo</title>
 </head>
 <body>
-<header>
+<header id="home" >
     <div class="header__wrapper">
         <div class="header__logo">
             <a href="#">
@@ -17,16 +17,36 @@
             </a>
             <span class="header__logoAccent">*</span>
         </div>
-        <div class="header__menu">
-            <div class="header__item">HOME</div>
+        <div id="header_menu" class="header__menu">
+            <div class="header__item">
+                <a class="header__link header__active" href="#home">
+                    HOME
+                </a>
+            </div>
             <div class="header__separator">·</div>
-            <div class="header__item ">SERVICES</div>
+
+            <div class="header__item ">
+                <a class="header__link" href="#services">SERVICES</a>
+            </div>
+
             <div class="header__separator">·</div>
-            <div class="header__item">PORTFOLIO</div>
+
+            <div class="header__item">
+                <a class="header__link" href="#portfolio">PORTFOLIO</a>
+            </div>
+
             <div class="header__separator">·</div>
-            <div class="header__item">ABOUT</div>
+
+            <div class="header__item">
+                <a class="header__link" href="#about">ABOUT</a>
+            </div>
+
             <div class="header__separator">·</div>
-            <div class="header__item">CONTACT</div>
+
+            <div class="header__item">
+                <a class="header__link" href="#contact">CONTACT</a>
+            </div>
+
         </div>
     </div>
 </header>
@@ -46,7 +66,7 @@
         </div>
     </div>
 </div>
-<div class="content">
+<div id="services" class="content">
     <div class="content__wrapper">
         <div class="content__info">
             <div class="content__info-title">
@@ -122,7 +142,7 @@
         </div>
     </div>
 </div>
-<section class="portfolio">
+<section id = "portfolio" class="portfolio">
     <div class="portfolio__wrapper">
         <div class="portfolio__title">Portfolio</div>
         <div class="portfolio__subtitle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
@@ -150,7 +170,7 @@
         </div>
     </div>
 </section>
-<section class="about">
+<section id="about" class="about">
     <div class="about__wrapper">
         <div class="about__title"> About Us</div>
         <div class="about__subtitle"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
@@ -204,7 +224,7 @@
         </div>
     </div>
 </section>
-<section class="contact">
+<section  id="contact" class="contact">
     <div class="contact__wrapper">
         <div class="contact__title">Get a Quote</div>
         <div class="contact__subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
