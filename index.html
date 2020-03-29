@@ -10,7 +10,9 @@
 </head>
 <body>
 <header>
-    <div class="header__wrapper">
+
+    <div id="" class="anchor header__wrapper">
+        <button class="header__burgerBtn"><img alt="button" src="./assets/images/burger-icon.png"></button>
         <div class="header__logo">
             <a href="#">
                 <h1>SINGOLO</h1>
@@ -45,6 +47,15 @@
                 <a class="header__link" href="#contact">CONTACT</a>
             </div>
         </div>
+        <div id="modal-menu">
+            <nav>
+                <a href="#" class="header__link header__active">HOME</a>
+                <a href="#services" class="header__link">SERVICES</a>
+                <a href="#portfolio" class="header__link">PORTFOLIO</a>
+                <a href="#about" class="header__link">ABOUT</a>
+                <a href="#contact" class="header__link">CONTACT</a>
+            </nav>
+        </div>
     </div>
 </header>
 <div id="slider" class="slider">
@@ -69,7 +80,7 @@
         </div>
     </div>
 </div>
-<div id="services" class="content">
+<div id="services" class="anchor content">
     <div class="content__wrapper">
         <div class="content__info">
             <div class="content__info-title">
@@ -81,71 +92,77 @@
                 tortor mauris condimentum nibh.
             </div>
         </div>
-        <div class="content__info-separator"></div>
-        <div class="content__services">
-            <div class="service__card">
-                <div class="service__card-logo"><img src="assets/images/pencil.png"></div>
-                <div class="service__card-content">
-                    <div class="service__card-caption">Custom Design</div>
-                    <div class="service__card-text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
-                        laoreet, viverra lacus ut, ultrices velit.
+        <div class="content__flex">
+            <div class="content__info-separator"></div>
+            <div class="content__services">
+                <div class="service__card">
+                    <div class="service__card-logo"><img src="assets/images/pencil.png"></div>
+                    <div class="service__card-content">
+                        <div class="service__card-caption">Custom Design</div>
+                        <div class="service__card-text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                            laoreet, viverra lacus ut, ultrices velit.
+                        </div>
+                    </div>
+                </div>
+                <div class="service__card">
+                    <div class="service__card-logo"><img src="assets/images/lamp.png"></div>
+                    <div class="service__card-content">
+                        <div class="service__card-caption">Inovative Ideas</div>
+                        <div class="service__card-text">Quisque luctus, quam eget molestie com-modo, lacus purus cursus
+                            purus, nec rutrum tellus dolor id lorem.
+                        </div>
+                    </div>
+                </div>
+                <div class="service__card">
+                    <div class="service__card-logo"><img src="assets/images/heart.png"></div>
+                    <div class="service__card-content">
+                        <div class="service__card-caption">Love Is The Answer</div>
+                        <div class="service__card-text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                            turpis,
+                            et consequat felis. Quisque condimentum.
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="service__card">
-                <div class="service__card-logo"><img src="assets/images/lamp.png"></div>
-                <div class="service__card-content">
-                    <div class="service__card-caption">Inovative Ideas</div>
-                    <div class="service__card-text">Quisque luctus, quam eget molestie com-modo, lacus purus cursus
-                        purus, nec rutrum tellus dolor id lorem.
+            <div class="content__service-separator"></div>
+            <div class="content__services">
+                <div class="service__card">
+                    <div class="service__card-logo"><img src="assets/images/phone.png"></div>
+                    <div class="service__card-content">
+                        <div class="service__card-caption">Responsive Layout</div>
+                        <div class="service__card-text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
+                            blandit
+                            nunc ligula. Prae-sent elit leo.
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="service__card">
-                <div class="service__card-logo"><img src="assets/images/heart.png"></div>
-                <div class="service__card-content">
-                    <div class="service__card-caption">Love Is The Answer</div>
-                    <div class="service__card-text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
-                        et consequat felis. Quisque condimentum.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content__service-separator"></div>
-        <div class="content__services">
-            <div class="service__card">
-                <div class="service__card-logo"><img src="assets/images/phone.png"></div>
-                <div class="service__card-content">
-                    <div class="service__card-caption">Responsive Layout</div>
-                    <div class="service__card-text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit
-                        nunc ligula. Prae-sent elit leo.
-                    </div>
-                </div>
-            </div>
 
-            <div class="service__card">
-                <div class="service__card-logo"><img src="assets/images/bubble.png"></div>
-                <div class="service__card-content">
-                    <div class="service__card-caption">24 / 7 Support</div>
-                    <div class="service__card-text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a
-                        sem erat. Pellen-tesque egestas venenatis lorem .
+                <div class="service__card">
+                    <div class="service__card-logo"><img src="assets/images/bubble.png"></div>
+                    <div class="service__card-content">
+                        <div class="service__card-caption">24 / 7 Support</div>
+                        <div class="service__card-text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
+                            Nulla a
+                            sem erat. Pellen-tesque egestas venenatis lorem .
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="service__card">
-                <div class="service__card-logo"><img src="assets/images/star.png"></div>
-                <div class="service__card-content">
-                    <div class="service__card-caption"> Feel Like A Star</div>
-                    <div class="service__card-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
-                        Fusce vitae aliquam tellus.
+                <div class="service__card">
+                    <div class="service__card-logo"><img src="assets/images/star.png"></div>
+                    <div class="service__card-content">
+                        <div class="service__card-caption"> Feel Like A Star</div>
+                        <div class="service__card-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
+                            nibh.
+                            Fusce vitae aliquam tellus.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<section id="portfolio" class="portfolio">
+<section id="portfolio" class="anchor portfolio">
     <div class="portfolio__wrapper">
         <div class="portfolio__title">Portfolio</div>
         <div class="portfolio__subtitle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
@@ -173,7 +190,7 @@
         </div>
     </div>
 </section>
-<section id="about" class="about">
+<section id="about" class="anchor about">
     <div class="about__wrapper">
         <div class="about__title"> About Us</div>
         <div class="about__subtitle"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
@@ -227,7 +244,7 @@
         </div>
     </div>
 </section>
-<section id="contact" class="contact">
+<section id="contact" class="anchor contact">
     <div class="contact__wrapper">
         <div class="contact__title">Get a Quote</div>
         <div class="contact__subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
