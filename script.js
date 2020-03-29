@@ -123,3 +123,20 @@ nameInput.addEventListener("focus", function () {
 emailInput.addEventListener("focus", function () {
     this.classList.remove("invalid");
 });
+
+
+const header = document.querySelector('header');
+const burgerBtn = document.querySelector('.header__burgerBtn');
+const modalMenu = document.querySelector('#modal-menu');
+
+burgerBtn.addEventListener('click', (e) => {
+    console.log('here');
+    header.classList.toggle('burger');
+    modalMenu.classList.toggle('active');
+
+});
+
+modalMenu.addEventListener('click', (e) => {
+    header.classList.remove('burger');
+    modalMenu.classList.toggle('active');
+});
