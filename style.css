@@ -33,6 +33,20 @@ html {
     padding: 0;
 }
 
+@media (max-width: 1019px) {
+    body,
+    html {
+        width: 768px;
+    }
+}
+
+@media (max-width: 767px) {
+    body,
+    html {
+        width: 375px;
+    }
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -45,8 +59,55 @@ header {
     background-color: #272c38;
     border-bottom: 6px solid #2c3445;
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 1000;
+}
+
+header #modal-menu {
+    display: none;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 278px;
+    height: 100%;
+    max-width: 70%;
+    background-color: #272c38;
+}
+
+#modal-menu.active {
+    display: flex;
+}
+
+#modal-menu nav {
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+margin-top: 161px;
+    align-items: center;
+}
+
+#modal-menu nav a{
+    margin-bottom: 27px;
+}
+
+.header__burgerBtn {
+    background-color: #272c38;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: 21px;
+    transition: all .5s;
+}
+
+header.burger .header__burgerBtn {
+    transform: rotate(90deg);
+    z-index: 1;
 }
 
 .header__wrapper {
@@ -115,6 +176,56 @@ header {
     opacity: 0.2;
 }
 
+@media (max-width: 1019px) {
+    header {
+        width: 768px;
+    }
+
+    .header__wrapper {
+        width: 688px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 375px;
+        height: 65px;
+    }
+
+    header a {
+     display: flex;
+     flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__burgerBtn {
+        display: flex;
+    }
+
+    .header__logoAccent {
+        margin-top: 0;
+    }
+
+    .header__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 375px;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+}
 
 .slider {
     margin: auto;
@@ -233,15 +344,160 @@ header {
     z-index: 100;
 }
 
+
+@media (max-width: 1019px) {
+    .slider__wrapper {
+        margin-top: 71px;
+        min-height: 447px;
+    }
+
+    .slider__content,
+    .slider2__content {
+        width: 600px;
+        height: 447px;
+    }
+
+    .slider2__phones {
+        margin-top: 45px;
+        background-image: url('assets/images/2-iphones.png');
+        width: 360px;
+        height: 360px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .slider__arrow {
+        width: 68px;
+        height: 447px;
+    }
+
+    .slider__iphone-vertical {
+        margin-top: 41px;
+        width: 181px;
+        height: 363px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .slider__iphone-horizontal {
+        width: 363px;
+        height: 181px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: 133px;
+        margin-left: 54px;
+    }
+
+    .slider_phone1-Area {
+        width: 180px;
+        height: 363px;
+        top: 41px;
+    }
+
+    .slider_phone2-Area {
+        width: 180px;
+        height: 363px;
+        left: 325px;
+        top: 40px;
+    }
+
+    .slider__blackScreen-vertical {
+        background-color: black;
+        width: 143px;
+        height: 252px;
+        left: 11px;
+        top: 90px
+    }
+
+    .slider__blackScreen-horizontal {
+        background-color: black;
+        width: 143px;
+        height: 252px;
+        left: 335px;
+        top: 89px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider {
+        height: 219px;
+        width: 375px;
+    }
+
+    .slider__wrapper {
+
+    }
+
+    .slider__content,
+    .slider2__content {
+        width: 293px;
+        height: 178px;
+    }
+
+    .slider__arrow {
+        width: 68px;
+        height: 219px;
+    }
+
+    .slider__iphone-vertical {
+        margin-top: 20px;
+        width: 90px;
+        height: 178px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .slider__iphone-horizontal {
+        width: 178px;
+        height: 88px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: 65px;
+        margin-left: 26px;
+    }
+
+    .slider_phone1-Area {
+        width: 90px;
+        height: 180px;
+        top: 20px;
+    }
+
+    .slider_phone2-Area {
+        width: 90px;
+        height: 180px;
+        left: 160px;
+        top: 20px;
+    }
+
+    .slider__blackScreen-vertical {
+        background-color: black;
+        width: 72px;
+        height: 125px;
+        left: 5px;
+        top: 44px
+    }
+
+    .slider__blackScreen-horizontal {
+        background-color: black;
+        width: 70px;
+        height: 123px;
+        left: 164px;
+        top: 43px;
+    }
+
+}
+
+
 .content {
     width: 100%;
     background-color: #f2f2f2;
 }
 
 .content__wrapper {
-    min-height: 500px;
+    min-height: 494px;
     height: 100%;
     background-color: #f2f2f2;
+    border-bottom: 6px solid white;
 }
 
 .content__info {
@@ -276,7 +532,7 @@ header {
 }
 
 .content__service-separator {
-    height: 22px;
+    height: 24px;
 }
 
 .content__services {
@@ -322,11 +578,57 @@ header {
     overflow: hidden;
     font-weight: normal;
     font-size: 12px;
-    line-height: 21px;
+    line-height: 22px;
     font-family: Lato, sans-serif;
     text-align: justify;
     color: #666d89;
     letter-spacing: -0.004rem;
+}
+
+@media (max-width: 1019px) {
+    .content__wrapper {
+        height: 541px;
+        width: 687px;
+        padding: 44px 40px 64px 41px;
+    }
+
+    .content__info {
+        padding: 0;
+    }
+
+    .content__info-title {
+        padding: 0;
+    }
+
+    .content__info-separator,
+    .content__service-separator {
+        display: none;
+    }
+
+    .content__services {
+        display: inline;
+        padding: 0;
+    }
+
+    .content__flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 18px;
+    }
+
+    .service__card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .content__wrapper {
+        height: 1033px;
+        width: 311px;
+        padding: 32px;
+    }
 }
 
 .portfolio {
@@ -338,6 +640,7 @@ header {
     padding: 0;
     overflow: hidden
 }
+
 
 .portfolio__wrapper {
     margin: 69px 30px;
@@ -365,7 +668,6 @@ header {
 }
 
 .portfolio__works {
-
     display: flex;
     flex-direction: row;
     height: 618px;
@@ -423,6 +725,98 @@ header {
 .portfolio__button:active {
     color: white;
     border: 1px solid white;
+}
+
+@media (max-width: 1019px) {
+    .portfolio {
+        margin: 0 auto;
+        width: 768px;
+        height: 1094px;
+    }
+
+    .portfolio__wrapper {
+        height: 968px;
+        margin: 62px 40px 65px 40px;
+    }
+
+    .portfolio__works {
+        display: flex;
+        flex-direction: row;
+        height: 814px;
+        flex-wrap: wrap;
+        overflow: hidden
+    }
+
+    .portfolio__image {
+        width: 216px;
+        height: 184px;
+        margin: 20px 0 0 0;
+    }
+
+    .portfolio__image:nth-child(2),
+    .portfolio__image:nth-child(5),
+    .portfolio__image:nth-child(8),
+    .portfolio__image:nth-child(11) {
+        margin: 20px 20px 0 20px;
+    }
+}
+@media (max-width: 767px) {
+    .portfolio {
+        margin: 0 auto;
+        width: 375px;
+        height: 824px;
+    }
+
+    .portfolio__wrapper {
+        height: 766px;
+        margin: 42px 30px;
+    }
+
+    .portfolio__filters {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .portfolio__button {
+        text-align: center;
+        margin: 0;
+    }
+
+    .portfolio__works {
+        display: flex;
+        flex-direction: row;
+        height: 554px;
+        flex-wrap: wrap;
+        overflow: hidden
+    }
+
+    .portfolio__image {
+        width: 151px;
+        height: 127px;
+        margin: 0 0 14px;
+    }
+
+    .portfolio__image:nth-child(2),
+    .portfolio__image:nth-child(5),
+    .portfolio__image:nth-child(8),
+    .portfolio__image:nth-child(11) {
+        margin: 0;
+    }
+
+    .portfolio__image:nth-child(1),
+    .portfolio__image:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .portfolio__image:nth-child(1),
+    .portfolio__image:nth-child(3),
+    .portfolio__image:nth-child(5),
+    .portfolio__image:nth-child(7) {
+        margin-right: 13px;
+    }
+
 }
 
 .about {
@@ -520,6 +914,76 @@ header {
 span {
     letter-spacing: 0.001rem;
     text-align: justify;
+}
+
+@media (max-width: 1019px) {
+    .about {
+        width: 768px;
+        height: 669px;
+    }
+    .about__wrapper {
+        margin: 52px 40px 55px 40px;
+    }
+
+    .about__employees {
+        overflow: hidden;
+    }
+
+    .about__employee {
+        height: 380px;
+        width: 219px;
+        margin: 20px 7.5px;
+    }
+
+    .about__employee-photo {
+        background-size: 100%;
+        height: 219px;
+        width: 219px;
+    }
+
+    .about__employee-social {
+        margin-top: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        width: 375px;
+        height: 1754px;
+    }
+    .about__wrapper {
+        margin: 33px 30px 45px 30px;
+    }
+
+
+    .about__subtitle {
+        height:auto;
+    }
+
+    .about__employees {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .about__employee {
+        height: 440px;
+        width: 314px;
+        margin-top: 23px;
+        margin-bottom: 10px;
+    }
+
+    .about__employee-photo {
+        background-size: 100%;
+        height: 314px;
+        width: 314px;
+    }
+
+    .about__employee-social {
+        margin-top: 13px;
+    }
 }
 
 .contact {
@@ -643,7 +1107,6 @@ textarea::placeholder {
 .invalid {
     box-shadow: 0 0 2px 2px #630000;
 }
-
 
 .modal-backdrop {
     position: fixed;
@@ -780,6 +1243,102 @@ textarea::placeholder {
     margin-top: 4px;
 }
 
+@media (max-width: 1019px) {
+    .contact {
+        width: 768px;
+        height: 605px;
+    }
+
+    .contact__wrapper {
+        margin: 56px 30px 62px 30px;
+    }
+
+    .contact__form {
+        margin-top: 23px;
+        height: 342px;
+        width: 442px;
+        justify-content: space-between;
+    }
+
+    .contact__form textarea {
+        height: 159px;
+    }
+
+    .contact__form input:nth-child(1),
+    .contact__form input:nth-child(2),
+    .contact__form input:nth-child(3) {
+        width: 427px;
+        margin-bottom: 12px;
+    }
+
+    .contact__info {
+        width: 221px;
+        margin-left: 29px;
+    }
+
+    .contact__infoTitle {
+        padding-top: 24px;
+    }
+
+    .contact__infoDescription {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact {
+        width: 375px;
+        height: 900px;
+    }
+
+    .contact__wrapper {
+        height: 806px;
+        margin: 50px 30px 42px 30px;
+        padding: 0;
+    }
+
+    .contact__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__form {
+        margin-top: 23px;
+        height: 342px;
+        width:100%;
+        justify-content: space-between;
+    }
+
+    .contact__form textarea {
+        height: 159px;
+    }
+
+    .contact__form input:nth-child(1),
+    .contact__form input:nth-child(2),
+    .contact__form input:nth-child(3) {
+        width: 300px;
+        margin-bottom: 12px;
+    }
+
+    .form__button {
+        width: 100%;
+    }
+
+
+    .contact__info {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact__infoTitle {
+        padding-top: 24px;
+    }
+
+    .contact__infoDescription {
+        width: 100%;
+    }
+}
+
 .footer {
     width: 1020px;
     height: 76px;
@@ -812,4 +1371,39 @@ textarea::placeholder {
     display: flex;
     justify-content: space-between;
     padding-bottom: 3px;
+}
+
+@media (max-width: 1019px) {
+    .footer {
+        width: 768px;
+    }
+
+    .footer__wrapper {
+        width: 688px;
+    }
+}
+@media (max-width: 767px)  {
+    .footer {
+        width: 375px;
+    }
+
+    .footer__wrapper {
+        width: 153px;
+    }
+
+    .footer__wrapper p {
+    display: none;
+    }
+}
+
+
+.modal-cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    width: 100%;
+    height: 100%;
+    background: #2D303A;
+    opacity: 0.6;
 }
