@@ -4,6 +4,24 @@ menu.addEventListener('click', (event) => {
     event.target.classList.add('header__active')
 });
 
+document.addEventListener('scroll', onScroll);
+
+function onScroll() {
+    const curPos = window.scrollY;
+    const divs = document.querySelectorAll('.anchor');
+    const links = document.querySelectorAll('.header__link');
+
+    divs.forEach((el) => {
+        if (el.offsetTop - 170 < curPos) {
+            links.forEach((a) => {
+                a.classList.remove('header__active');
+                if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('header__active');
+                }
+            })
+        }
+    });
+}
 
 const slider = document.getElementById('slider');
 slider.querySelectorAll('.slider__arrow').forEach(arrow => {
@@ -35,7 +53,7 @@ const portfolioMenu = document.getElementById('portfolio-menu');
 portfolioMenu.addEventListener('click', (event) => {
     if (event.target.className !== 'portfolio__filters') {
         portfolioMenu.querySelectorAll('.portfolio__button').forEach(el => el.classList.remove('portfolio__button-active'));
-        event.target.classList.add('portfolio__button-active')
+        event.target.classList.add('portfolio__button-active');
         reorderPictures();
     }
 });
@@ -98,10 +116,10 @@ modalCloseButton.addEventListener("click", () => {
     form.reset();
 });
 
-nameInput.addEventListener("focus", function() {
+nameInput.addEventListener("focus", function () {
     this.classList.remove("invalid");
 });
 
-emailInput.addEventListener("focus", function() {
+emailInput.addEventListener("focus", function () {
     this.classList.remove("invalid");
 });
