@@ -434,6 +434,15 @@ header.burger .header__burgerBtn {
         height: 178px;
     }
 
+    .slider2__phones {
+        margin-top: 20px;
+        background-image: url('assets/images/2-iphones.png');
+        width: 178px;
+        height: 178px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
     .slider__arrow {
         width: 68px;
         height: 219px;
